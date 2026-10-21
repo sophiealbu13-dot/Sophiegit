@@ -1,0 +1,31 @@
+flex-cs {
+    display: flex;
+    gap: 23px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-cs > li {
+    flex: 1;
+    min-width: 223px;
+}
+
+.flex-con {
+    display: flex;
+    gap: 43px;
+    align-items: flex-start;
+}
+
+.flex-con-c, .flex-con form {
+    flex: 1;
+    align-items: center;
+}
+
+.flex-ca {
+    display: flex;
+    gap: 200px;
+    background-color:rgb(201, 128, 177);
+    align-items: flex-start;
+}
