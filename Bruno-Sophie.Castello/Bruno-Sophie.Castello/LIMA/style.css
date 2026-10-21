@@ -1,15 +1,90 @@
-/* ROOT: Podemos guardar nossas cores e informações gerais em um unico lugar */
+/* ROOT: Podemos guardar nossas cores e informações gerais em um único lugar */
+
 
 :root {
     /* Paleta de Cores */
     --creme: #F3E6D7;
-    --preto: #000; 
+    --preto: black;
     --branco: #FFFFFF;
 
+        /* Tipografia */
+    --fonte-principal: 'Times New Roman', serif;
+    --fonte-texto: 'Arial';
+    --fonte-secundária: "IBM Plex Sans", sans-serif;
+
+} 
+
+/* Configurações de Reset Básico */
+* {
+    /* Permite alterar configurações de todo o html */
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth; /*deixa a nevagação mais suave e amasiada */
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-secundária);
+    font-weight: 800;
+    color: var(--preto);
+    background-color: var(--creme);
+    line-height: 1.6; /*espaçamento entre textos */
+}
+
+img {
+    max-width: 100%;
+    display: block; /*deixa a imagem fixa */
+}
+/* Fim das configurações básicas */
+
 
 .id-v {
     height: 100px;
     background-color: var(--creme);
-    
+    color: var(--branco);
+    font-family: var(--fonte-texto);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: var(--branco);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font: 1.25rem;
+}
+
+.id-nav {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+}
+
+id-nav a {
+    color: var(--preto);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.id-v a:hover {
+    color: pink;
+}
+
+/* Aplicação de funcionalidade e acessibilidade por teclado */
+.id-v a:focus-visible{
+    outline: 3px solid var(--branco);
+    outline-offset: 10px;
 }
