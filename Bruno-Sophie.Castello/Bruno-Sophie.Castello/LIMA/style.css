@@ -1,0 +1,15 @@
+/* ROOT: Podemos guardar nossas cores e informações gerais em um unico lugar */
+
+:root {
+    /* Paleta de Cores */
+    --creme: #F3E6D7;
+    --preto: #000; 
+    --branco: #FFFFFF;
+
+}
+
+.id-v {
+    height: 100px;
+    background-color: var(--creme);
+    
+}
