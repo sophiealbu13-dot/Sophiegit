@@ -43,39 +43,26 @@ INSERT INTO usuario (nome, email, telefone, ativo) VALUES
 ('Eve', 'eve@example.com', '222222222', TRUE);
 
 INSERT INTO livro (titulo, autor, isbn, ano_publicacao, quantidade_disponivel) VALUES
-('Livro Corrupt', 'Best-seller', '1234567890123', 2015, 3),
-('Livro Verity', 'Colleen Hoover', '9876543210987', 2018, 5),
-('Livro Invisivel', 'Eloy Moreno', '5555555555555', 2024, 2),
-('Livro Até o Verão Terminar', 'Colleen Hoover', '1111111111111', 2018, 4),
-('Livro Desenfreados', 'Kelly M.', '2222222222222', 2024, 1),
-('Livro Garota do Lago', 'Charlie Donlea', '3333333333333', 2017, 5);
+('Livro Corrupt', 'Best-seller', '123456789', 2015, 3),
+('Livro Verity', 'Colleen Hoover', '987654321', 2018, 5),
+('Livro Invisivel', 'Eloy Moreno', '555555555', 2024, 2),
+('Livro Até o Verão Terminar', 'Colleen Hoover', '111111111', 2018, 4),
+('Livro Desenfreados', 'Kelly M.', '222222222', 2024, 1),
+('Livro Garota do Lago', 'Charlie Donlea', '333333333', 2017, 5);
 
 INSERT INTO emprestimo (data_emprestimo, data_prevista_devolucao, status_emprestimo, id_usuario, id_livro) VALUES
 ('2026-06-01', '2026-06-15', 'ABERTO', 1, 1),
 ('2026-06-02', '2026-06-16', 'ABERTO', 2, 2),
 ('2026-06-03', '2026-06-17', 'ABERTO', 3, 3),
-('2026-06-04', '2026-06-18', 'ABERTO', 4, 4),
-('2026-06-05', '2026-06-19', 'ABERTO', 5, 5);
+('2026-06-04', '2026-06-18', 'ABERTO', 4, 4);
 
-SELECT * FROM usuario;
+SELECT * FROM usuario WHERE id_usuario = 3;
 
 UPDATE usuario 
-SET telefone = '111111112' 
-WHERE id_usuario = 4;
+SET telefone = '555555555'
+WHERE id_usuario = 3;
 
-SELECT * FROM livro, quantidade_disponivel;
-
-UPDATE livro 
-SET quantidade_disponivel = 2
-WHERE id_livro = '5555555555555';
-
-SELECT * FROM livro, quantidade_disponivel;
-
-UPDATE livro 
-SET quantidade_disponivel = 4
-WHERE id_livro = '5555555555555',
-
-
-
-
+UPDATE livro
+SET quantidade_disponivel = quantidade_disponivel + 2
+WHERE ano_publicacao >= 2020;
 
