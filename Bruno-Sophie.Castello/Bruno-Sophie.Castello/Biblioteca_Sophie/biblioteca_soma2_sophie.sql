@@ -66,3 +66,4 @@ UPDATE livro
 SET quantidade_disponivel = quantidade_disponivel + 2
 WHERE ano_publicacao >= 2020;
 
+SELE

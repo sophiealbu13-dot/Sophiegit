@@ -1,0 +1,70 @@
+img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 10px;
+    center: center;
+}
+
+.cabecalho {
+    display: flex;
+}
+
+.menu-f {
+    display: flex;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sobre-cabecalho2 {
+    display: flex;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 10px;
+}
