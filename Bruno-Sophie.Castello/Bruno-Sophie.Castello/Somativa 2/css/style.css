@@ -1,3 +1,11 @@
+body {
+    color: rgb(253, 251, 251);
+    background-color: rgb(38, 2, 97);
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    padding: 15px;
+}
+
 img {
     width: 50%;
     height: auto;
@@ -64,7 +72,34 @@ h3 {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(253, 251, 251);
     font-size: 16px;
     margin: 10px;
+    center: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    padding: 15px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: rgb(253, 251, 251);
+}
+
+main {
+    padding: 20px;
+}
+
+head {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
 }
