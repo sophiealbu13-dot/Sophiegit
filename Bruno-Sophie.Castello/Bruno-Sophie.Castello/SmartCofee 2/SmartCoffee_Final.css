@@ -1,0 +1,102 @@
+:root {
+    /* Paleta de cores SmartCoffee */
+    --espresso: #4B3832;
+    --café: #A67B5B;
+    --caramelo: #D2B48C;
+    --creme: #FFF5E1;
+    --marfim: #fff9f3;
+    --taupe: #8B8589;
+    --texto: #333333;
+    --branco: #FFFFFF;
+
+    /* Definições complementares de borda, sombra, raio e espaçamento de texto */
+    --borda: #CCCCCC;
+    --sombra: rgba(0, 0, 0, 0.1);
+    --sombra-hover: rgba(0, 0, 0, 0.2);
+    --raio: 14px;
+    --espacamento-peq: 8px;
+    --espacamento-med: 16px;
+    --espacamento-grande: 24px;
+    --espacamento-egrande: 40px;
+    --espacamento-xgrande: 64px;
+    --espacamento-xxgrande: 80px;
+}
+
+/* configuração principal - reset inicial de layout */
+* { 
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--branco);
+    background-color: var(--marfim);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* margin-top é para definir margem em cima */
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+input,textarea, button {
+    font: inherit;
+}
+
+
+/* cabeçalho do site */
+.cabecalho-principal {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--espacamento-med);
+    padding: 16px max(6vw, 24px);
+    background-color: var(--expresso);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.marca {
+    color: var(--branco);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.marca spam, .marca-rodape spam {
+    color: var(--caramelo)
+}
+
+.menu a {
+    color: var(--branco);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
