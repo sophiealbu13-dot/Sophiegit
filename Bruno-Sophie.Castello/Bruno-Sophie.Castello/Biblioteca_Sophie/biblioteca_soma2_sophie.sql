@@ -1,7 +1,7 @@
--- Active: 1792494987118@@127.0.0.1@3306@biblioteca_soma2_sophie
-DROP DATABASE IF EXISTS biblioteca_soma2_Sophie;
-CREATE DATABASE biblioteca_soma2_Sophie;
-USE biblioteca_soma2_Sophie;
+-- Active: 1794917699309@@127.0.0.1@3308@biblioteca_senai_sophie
+DROP DATABASE IF EXISTS biblioteca_senai_sophie;
+CREATE DATABASE biblioteca_senai_sophie;
+USE biblioteca_senai_sophie;
 
 CREATE TABLE usuario (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
