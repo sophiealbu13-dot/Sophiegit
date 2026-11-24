@@ -230,14 +230,6 @@ header {
 .sobre-destaque h3 {
     margin: 10px 0;
 }
-
-
-footer {
-    padding: 35px 5% 15px;
-    background-color: #17263f;
-    color: #ffffff;
-}
-
 .rodape-conteudo {
     max-width: 1150px;
     margin: auto;
@@ -246,82 +238,5 @@ footer {
     gap: 25px;
 }
 
-.rodape-conteudo h2 {
-    letter-spacing: 2px;
-}
-
-.rodape-conteudo h3 {
-    margin-bottom: 8px;
-}
-
-.rodape-conteudo p {
-    color: #d2dbea;
-    font-size: 14px;
-}
-
-.creditos {
-    max-width: 1150px;
-    margin: 25px auto 0;
-    padding-top: 12px;
-    border-top: 1px solid #40506a;
-    text-align: center;
-    color: #c5cede;
-    font-size: 12px;
-}
 
 
-@media (max-width: 800px) {
-    .menu {
-        padding: 15px 0;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .menu ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .banner {
-        min-height: 340px;
-        padding: 55px 7%;
-    }
-
-    .banner h1 {
-        font-size: 34px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .sobre {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 560px) {
-    .cards,
-    .horarios {
-        grid-template-columns: 1fr;
-    }
-
-    .programacao {
-        padding: 22px 16px;
-    }
-
-    .banner h1 {
-        font-size: 29px;
-    }
-
-    .rodape-conteudo {
-        flex-direction: column;
-    }
-
-    .secao,
-    .sobre {
-        margin-top: 45px;
-        margin-bottom: 45px;
-    }
-}
